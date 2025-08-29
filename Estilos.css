@@ -1,1 +1,125 @@
+/* ===== Estilos rosados, minimalistas y responsivos ===== */
 
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #ff80ab, #f48fb1);
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header h2 {
+  margin: 5px 0 0;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+/* Tabla (desktop) */
+.malla.desktop {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+thead {
+  background: #f48fb1;
+  color: white;
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background: #fff0f5;
+}
+
+tbody tr:hover {
+  background: #ffe4ec;
+  transition: 0.3s;
+}
+
+/* Bloques colapsables (mobile) */
+.malla.mobile {
+  display: none;
+  padding: 10px;
+}
+
+.semestre {
+  margin-bottom: 10px;
+}
+
+.toggle {
+  width: 100%;
+  padding: 14px;
+  background: #f48fb1;
+  border: none;
+  color: white;
+  font-size: 1em;
+  text-align: left;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.toggle:hover {
+  background: #ff80ab;
+}
+
+.contenido {
+  max-height: 0;
+  overflow: hidden;
+  background: #fff0f5;
+  border-radius: 6px;
+  margin-top: 5px;
+  padding: 0 10px;
+  transition: max-height 0.4s ease-out;
+}
+
+.contenido ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+/* Footer */
+footer {
+  background: #fce4ec;
+  color: #444;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9em;
+  border-top: 1px solid #f8bbd0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .malla.desktop {
+    display: none;
+  }
+  .malla.mobile {
+    display: block;
+  }
+}
